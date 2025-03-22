@@ -8,12 +8,14 @@
 <body>
     
     <script>
-        let idade = parseInt(prompt("Digite sua idade:"));
-        if (idade >= 18) {
-            console.log("Você é maior de idade.");
-        } else {
-            console.log("Você é menor de idade.");
-        }
+        let nota;
+        do {
+            nota = parseFloat(prompt("Digite uma nota entre 0 e 10:"));
+        } while (nota < 0 || nota > 10);
+        console.log("Nota válida.");
+
+
+
     </script>
 </body>
 </html>

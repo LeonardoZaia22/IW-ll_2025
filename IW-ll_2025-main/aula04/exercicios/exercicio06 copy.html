@@ -8,12 +8,14 @@
 <body>
     
     <script>
-        let idade = parseInt(prompt("Digite sua idade:"));
-        if (idade >= 18) {
-            console.log("Você é maior de idade.");
-        } else {
-            console.log("Você é menor de idade.");
+        let numero = parseInt(prompt("Digite um número:"));
+        let soma = 0;
+        for (let i = 1; i <= numero; i++) {
+            soma += i;
         }
+        console.log(`A soma dos números de 1 até ${numero} é ${soma}.`);
+
+
     </script>
 </body>
 </html>

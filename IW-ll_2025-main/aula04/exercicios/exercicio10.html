@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+        let palpite;
+        do {
+            palpite = parseInt(prompt("Adivinhe o número (1 a 10):"));
+            if (palpite < numeroAleatorio) {
+                console.log("Tente um número maior.");
+            } else if (palpite > numeroAleatorio) {
+                console.log("Tente um número menor.");
+            }
+        } while (palpite !== numeroAleatorio);
+        console.log("Parabéns, você acertou!");
+
+
+
+    </script>
+</body>
+</html>
